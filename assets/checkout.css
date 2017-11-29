@@ -69,13 +69,6 @@
     max-block-size: 45px;
 }
 
-.ad {
-  display: flex;
-  width: 300px;
-  justify-content: center;
-  align-items: center;
-}
-
 .radio-input {
   margin-top: 20px;
 }
