@@ -64,13 +64,6 @@
   align-items: center;
 }
 
-.ad {
-  display: flex;
-  width: 300px;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .card-logos img {
     padding: 5px;
     max-block-size: 45px;
