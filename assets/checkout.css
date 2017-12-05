@@ -164,6 +164,7 @@ input[type='password']:focus {
 
  #parent:hover {
   height: 360px;
+  cursor: pointer;
  }
 
  .modal {
