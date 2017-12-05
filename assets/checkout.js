@@ -2,7 +2,7 @@ var modal = document.getElementById("adModal");
 
 var btn = document.getElementById("parent");
 
-var span = document.getElementByClassName("close")[0];
+var span = document.getElementById("close");
 
 btn.onclick = function() {
 	modal.style.display = "block";
