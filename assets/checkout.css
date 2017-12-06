@@ -181,11 +181,12 @@ input[type='password']:focus {
  }
 
  .modal-content {
-  background-color: #fefefe;
+  background-color: #80808000;
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
   width: 585px;
+  border: none;
  }
 
  #close {
