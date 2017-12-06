@@ -189,6 +189,10 @@ input[type='password']:focus {
   border: none;
  }
 
+.modal-content img:hover {
+  cursor: pointer;
+ }
+
  #close {
   color: #aaa;
   float: right;
