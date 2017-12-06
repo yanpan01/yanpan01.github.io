@@ -182,11 +182,11 @@ input[type='password']:focus {
 
  .modal-content {
   background-color: #80808000;
-  margin: 15% auto;
   padding: 20px;
-  border: 1px solid #888;
   width: 585px;
   border: none;
+  position: fixed;
+  margin-left: 350px;
  }
 
 .modal-content img:hover {
@@ -194,7 +194,7 @@ input[type='password']:focus {
  }
 
  #close {
-  color: #aaa;
+  color: white;
   float: right;
   font-size: 28px;
   font-weight: bold;
