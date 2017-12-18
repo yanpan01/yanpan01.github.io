@@ -10,6 +10,12 @@
     <meta name="csrf-param" content="authenticity_token" />
 <meta name="csrf-token" content="NOytlEv0oZX1di4VXdfeHZSM1XDD1v9VCL59sIwxuZ8IoaUSnzHXcPMaBiwoofafxxBl6uHIufJYpnoKt2kF3Q==" />
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Raleway:400,300,600" type="text/css" media="screen" title="no title" charset="utf-8">
+    <script type="text/javascript">
+            window.onAmazonLoginReady = function() {
+		                    amazon.Login.setClientId('amzn1.application-oa2-client.f54aa234d9024af28f4f6f8078f149ce');
+	    }
+    </script>
+    <script type="text/javascript" src="https://d13rywa7qgd44w.cloudfront.net/OffAmazonPayments/us/js/Widgets.js"></script>
     
   </head>
 
@@ -85,6 +91,32 @@
     <div> <img src="https://s3.us-east-2.amazonaws.com/testpage-boost/checkout-footer.png"> </div>
    </div>
   </div>  <!-- panel body -->
+  <div id="AddressWidget" class="widget-double-column"></div>
+          <script type="text/javascript">
+            new OffAmazonPayments.Widgets.AddressBook({
+		                    sellerId: "A00776781CGRB9X5FMXVX",
+				                    design: { designMode: 'responsive' },
+						                    onOrderReferenceCreate: function(orderReference) {
+									                        window.onAddressSelectedComplete(orderReference.getAmazonOrderReferenceId());
+												                },
+								                    onAddressSelect: function(orderReference) {
+											                    },
+										                    onError: function(error) {
+													                    }
+				                }).bind("AddressWidget");
+        </script>
+
+	        <div id="WalletWidget" class="widget-double-column"></div>
+		        <script type="text/javascript">
+            new OffAmazonPayments.Widgets.Wallet({
+		                	sellerId: "A00776781CGRB9X5FMXVX",
+					                design: {designMode: 'responsive'},
+							                onPaymentMethodSelect: function(orderReference) {
+										                },
+									                onError: function(error) {
+												                }
+					            }).bind("WalletWidget");
+        </script>
 </main>
 
 <script type="text/javascript">
